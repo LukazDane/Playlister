@@ -16,3 +16,4 @@ venv.bak/
 pip-selfcheck.json
 .pyc
 .vscode
+vscode/
