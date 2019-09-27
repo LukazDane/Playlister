@@ -1,12 +1,22 @@
 <!-- templates/playlists_new.html -->
 {% extends 'base.html' %} {% block content %}
-<form method="POST" action="/playlists">
-  {% include 'partials/playlists_form.html' %}
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <form method="POST" action="/playlists">
+      {% include 'partials/playlists_form.html' %}
 
-  <!-- BUTTON -->
-  <p>
-    <button type="submit">Save Playlist</button>
-    <button type="submit" value="cancel">Cancel</button>
-  </p>
-</form>
+      <!-- BUTTON -->
+      <p>
+        <button type="submit" class="btn btn-primary">Save Playlist</button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="window.location.href='/playlists'"
+        >
+          Cancel
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
 {% endblock %}
