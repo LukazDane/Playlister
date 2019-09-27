@@ -6,6 +6,12 @@
   <!-- BUTTON -->
   <p>
     <button type="submit">Save Playlist</button>
+    <button
+      type="button"
+      onclick="window.location.href='/playlists/{{ playlist._id }}'"
+    >
+      Cancel
+    </button>
   </p>
 </form>
 {% endblock %}
